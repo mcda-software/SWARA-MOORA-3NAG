@@ -66,7 +66,7 @@ st.sidebar.image('2logo_sm-3nag.jpeg', use_column_width = 'always')
 st.image('reduzido_sm-3nag.jpeg', use_column_width = 'always')
 #st.header('SWARA - MOORA - 3NAG')
 
-paginas = ['Home', 'Sobre', 'Autores']
+paginas = ['Home', 'Cálculo', 'Sobre', 'Autores']
 st.sidebar.markdown('# :house: **Menu**')
 pagina = st.sidebar.selectbox('Escolha uma página: ', paginas, key='lista_paginas2')
 
@@ -91,8 +91,11 @@ if pagina == 'Home':
     - Simplicidade ao incluir os dados
     - Apresentação detalhada dos resultados
     
+
+    #### Para que possa iniciar a inclusão dos seus dados e realizar os calculos para o seu problema entre na página "Cálculo" a esquerda.
     '''
-    #st.latex(r''' e^{i\pi} + 1 = 0 ''')
+
+if pagina == 'Cálculo':
     st.markdown('### Para iniciar, inclua o nome do Trabalho:')
     with st.form(key="inicio"):
         trabalho = st.text_input('Nome do Trabalho:')
@@ -930,7 +933,7 @@ if pagina == 'Autores':
     st.markdown("💻 [Linkedin](https://www.linkedin.com/in/isaque-d-4954ba1b1/)")
 
     st.markdown('#### ✔️ Prof. DSc. Marcos dos Santos')
-    st.markdown("📜 [Currículo Lattes](httnal)")
+    st.markdown("📜 [Currículo Lattes](http://lattes.cnpq.br/5534398558592175)")
     st.markdown("🖥️ [Researshgate](https://www.researchgate.net/profile/Marcos-Santos-85)")
     st.markdown("💻 [Linkedin](https://www.linkedin.com/in/profmarcosdossantos/)")
     st.markdown("Casa da Pesquisa Operacional - [YouTube](https://www.youtube.com/c/CasadaPesquisaOperacional)")
