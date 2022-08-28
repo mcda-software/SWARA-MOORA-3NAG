@@ -1,0 +1,39 @@
+.stButton > button {
+    color: #FFFFFF;
+    background-color: #C60C35;
+    font-size: 18px;
+    height: 60px;
+    width: 100%;
+}
+
+.stButton > button:hover {
+    color: #FFFFFF;
+    background-color: #920000;
+    border-color: #920000;
+    font-size: 18px;
+    height: 60px;
+    width: 100%;
+}
+
+footer {
+    visibility: hidden;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+.stMarkdown {
+    text-align: center;
+}
+
+page_bg_img = '''
+<style> 
+body {
+background-image:
+url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size = cover;
+} 
+</style>
+'''
+
