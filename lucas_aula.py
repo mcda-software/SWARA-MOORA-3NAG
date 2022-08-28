@@ -125,8 +125,8 @@ if pagina == 'Cálculo':
         #if VerficarDuplicados != []:
         #    st.error('Não pode existir nome de Alternativas iguais. Por favor Renomeie as suas Alternativas !!!') 
 
-    numero_alternativas = 4                  # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    lista_alternativas = ['a1','a2','a3','a4']    # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    #numero_alternativas = 4                  # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    #lista_alternativas = ['a1','a2','a3','a4']    # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     #st.write(numero_alternativas)                # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     #st.write(lista_alternativas)             # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -176,9 +176,9 @@ if pagina == 'Cálculo':
         #st.write(lista_criterios)
         #st.write(id_criterio)
             
-    lista_criterios = ['c1','c2','c3','c4','c5','c6', 'c7']      # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    numero_criterios = 7                     # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    id_criterio = ['L','L','C','L','L','L', 'C']            # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    #lista_criterios = ['c1','c2','c3','c4','c5','c6', 'c7']      # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    #numero_criterios = 7                     # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    #id_criterio = ['L','L','C','L','L','L', 'C']            # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     #st.write(lista_criterios)
     #st.write(id_criterio)
     #st.write(numero_criterios)
@@ -242,10 +242,10 @@ if pagina == 'Cálculo':
             st.dataframe(df2)
             matriz = np.array(df2)                        # Para retirar os valores da matriz
             #st.write(matriz)
-            matriz = [[2.6,4.2,210000,3.3,1,190,120],                  # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-            [5.18,12,136970,6,1,200,70],                           # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-            [5.18,15,185000,4.7,1,200,70],                       # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-            [5.09,7,82419,4,2,150,50]]                       # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            #matriz = [[2.6,4.2,210000,3.3,1,190,120],                  # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            #[5.18,12,136970,6,1,200,70],                           # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            #[5.18,15,185000,4.7,1,200,70],                       # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            #[5.09,7,82419,4,2,150,50]]                       # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                                  
 #===============================================================================================
 #===============================================================================================
