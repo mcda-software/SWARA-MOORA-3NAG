@@ -223,12 +223,13 @@ if pagina == 'Cálculo':
                 w= f'Comparação {z+1}'
                 nome_comparacao.append(w)                        
                 z+=1
-            st.form_submit_button('Confirmar os valores de comparação.')    
+            #st.form_submit_button('Confirmar os valores de comparação.')
             botao_comparacao = st.form_submit_button('Confirmar os valores de comparação.')
+       #                       st.form_submit_button('Confirmar nº de Critérios')
             if botao_comparacao:
                 st.session_state.botao_inclusao_da_matriz = 1
-            df_comparacao = pd.DataFrame(valor_importancia_sj , index=nome_comparacao, columns= ['%'] )
-            st.dataframe(df_comparacao, width = 300)
+                df_comparacao = pd.DataFrame(valor_importancia_sj , index=nome_comparacao, columns= ['%'] )
+                st.dataframe(df_comparacao, width = 300)
     
     if st.session_state.botao_inclusao_da_matriz == 1:       #lista_criterios[-1] is not "":
         st.write('A matriz de decisão é:')
