@@ -223,13 +223,11 @@ if pagina == 'Cálculo':
                 w= f'Comparação {z+1}'
                 nome_comparacao.append(w)                        
                 z+=1
-            #st.form_submit_button('Confirmar os valores de comparação.')
             botao_comparacao = st.form_submit_button('Confirmar os valores de comparação.')
-       #                       st.form_submit_button('Confirmar nº de Critérios')
             if botao_comparacao:
                 st.session_state.botao_inclusao_da_matriz = 1
-                df_comparacao = pd.DataFrame(valor_importancia_sj , index=nome_comparacao, columns= ['%'] )
-                st.dataframe(df_comparacao, width = 300)
+            df_comparacao = pd.DataFrame(valor_importancia_sj , index=nome_comparacao, columns= ['%'] )
+            st.dataframe(df_comparacao, width = 300)
     
     if st.session_state.botao_inclusao_da_matriz == 1:       #lista_criterios[-1] is not "":
         st.write('A matriz de decisão é:')
@@ -250,11 +248,13 @@ if pagina == 'Cálculo':
             df2 = ag['data']
             
             botao_inclusao_matriz = st.form_submit_button('Confirmar os valores inseridos.')
+            if botao_inclusao_matriz:
+                st.session_state.inicio_calculo = 1
             df2.index = lista_alternativas
             st.dataframe(df2)
             matriz = np.array(df2)                        # Para retirar os valores da matriz
-            if botao_inclusao_matriz:
-                st.session_state.inicio_calculo = 1
+            #if botao_inclusao_matriz:
+            #    st.session_state.inicio_calculo = 1
             #st.write(matriz)
             #matriz = [[2.6,4.2,210000,3.3,1,190,120],                  # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
             #[5.18,12,136970,6,1,200,70],                           # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
